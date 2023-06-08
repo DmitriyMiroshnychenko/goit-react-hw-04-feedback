@@ -1,0 +1,29 @@
+.StatisticsWrapper {
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+}
+
+.StatisticsList-names li,
+.StatisticsList-numbers li {
+  font-size: 18px;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-family: 'Montserrat', sans-serif;
+  color: #ccc;
+}
+
+.StatisticsList-names li:not(:last-child),
+.StatisticsList-numbers li:not(:last-child) {
+  margin-bottom: 5px;
+}
+
+.StatisticsList-numbers {
+  text-align: center;
+}
+
+.StatisticsList-names li::before {
+  content: '•';
+  margin-right: 5px;
+  color: #3a3235;
+}
